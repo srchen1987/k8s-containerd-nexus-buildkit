@@ -4,6 +4,8 @@
 
 [dawdler-series](https://github.com/srchen1987/dawdler-series) 终究还是要是要容器化.大势所趋所以被迫搞一下子.
 
+全球第一个关于buildkit+nexus私有库实现的部署文档.
+
 ## 1.环境准备
 
 ### 1.1 四台虚拟机
