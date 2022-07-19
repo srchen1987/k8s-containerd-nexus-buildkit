@@ -25,10 +25,12 @@
 
 vim /etc/hosts
 
+```text
 192.168.43.144 k8s-master1
 192.168.43.146 k8s-node1
 192.168.43.147 k8s-node2
 192.168.43.137 my.nexus.org
+```
 
 也可以用 hostnamectl set-hostname   k8s-master1
 
