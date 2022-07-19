@@ -123,7 +123,7 @@ modprobe br_netfilter
 
 使用lsmod | grep -e ip_vs -e nf_conntrack_命令查看是否已经正确加载所需的内核模块.
 
-改变权限
+改变权限并加载ipvs
 
 ```shell
 chmod 755 /etc/sysconfig/modules/ipvs.modules && bash /etc/sysconfig/modules/ipvs.modules && lsmod | grep -e ip_vs -e nf_conntrack
