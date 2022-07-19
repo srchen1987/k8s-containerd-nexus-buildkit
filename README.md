@@ -260,7 +260,7 @@ vim ~/.docker/config.json
 
 #### 2.3 kubeadm初始化
 
-命令行初始化(可以科学上网的可以去除--image-repository
+命令行初始化 可以科学上网的可以去除--image-repository
 
 ```shell
 kubeadm init \
