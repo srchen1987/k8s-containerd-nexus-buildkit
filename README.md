@@ -292,6 +292,18 @@ kubeadm join 192.168.43.144:6443 --token ds62l9.scyt0ise8k9qakae \
         --discovery-token-ca-cert-hash sha256:c1d0577681ad0c5dacd7814fc60afd71fe9adb33b3c6168bf93854645d33e33e
 ```
 
+#### 2.4 开启ipvs
+
+设置ConfigMap的kube-system/kube-proxy中的config.conf配置mode: "ipvs" 
+
+```shell
+kubectl edit cm kube-proxy -n kube-system
+```
+删除pod(会重新启动新的)
+```shell
+kubectl get pod -n kube-system |grep kube-proxy |awk '{system("kubectl delete pod "$1" -n kube-system")}'
+```
+
 ### 3. node节点加入k8s集群
 
 运行kubeadm init输出
